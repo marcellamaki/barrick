@@ -12,8 +12,10 @@
 
   <body>
     <header>
-      <img src="./img/Assets/Barrick_logo.svg" alt="Barrick">
-      <nav>
+      <img src="./img/Assets/Barrick_logo.svg" alt="Barrick"><!--
+        remove the whitespace between inline-blocks
+      --><nav>
+          <div class="nav-main">
             <a href="#">Our Board</a>
             <a href="#">Our Company</a>
             <a href="#">Our Pay</a>
@@ -23,85 +25,142 @@
               <option value="Report">Report</option>
               <option value="Calendar">Calendar</option>
             </select>
-            <a href="#">Download Proxy</a>
-            <a href="#">Annual Report</a>
+          </div><!--
+          --><div class="nav-cta">
+            <a style="text-decoration:underline;font-size:10px;" href="#">Download Proxy</a>
+            <a style="text-decoration:underline;font-size:10px;" href="#">Annual Report</a>
             <button class="button-solid" style="vertical-align:middle"><span>VOTE NOW</span></button>
+          </div>
       </nav>
-      </header>
+    </header>
 
-    <section id="hero">
+    <div class="hero">
       <div class="container">
         <h3>Welcome</h3>
         <hr>
         <h2>Barrick: Delivering for <br>Shareholders</h2>
       </div>
-    </section>
-    <section id="boxes">
+    </div>
+    <div class="boxes" id="boxes-1">
       <div class="container">
-        <div id="box">
+        <div class="box">
           <img src="./img/Assets/2xour-board.jpg"/>
           <div class="box-text">
+            Our Board
+            <br>
+            <button class="button-open-transparent-2">LEARN MORE</button>
           </div>
-        </div>
-        <div id="box">
+        </div><!--
+        --><div class="box">
           <img src="./img/Assets/2xour-company.jpg"/>
           <div class="box-text">
+            Our Company
+            <br>
+            <button class="button-open-transparent-2">LEARN MORE</button>
           </div>
-        </div>
-        <div id="box">
+        </div><!--
+        --><div class="box">
             <img src="./img/Assets/2xour-pay.jpg"/>
             <div class="box-text">
+              Our Pay
+              <br>
+              <button class="button-open-transparent-2">LEARN MORE</button>
             </div>
         </div>
       </div>
-    </section>
-    <section id="graph">
-      <h2> We Executed on All Our 2016 Priorities </h2>
+    </div>
+
+    <div class="graph" id="boxes-2">
       <div class="container">
-        <div id="box">
+        <div class="graph-box">
           <img src="./img/Assets/graph1.png"/>
-          <div class="box-text">
-          </div>
-        </div>
-        <div id="box">
+        </div><!--
+        --><div class="graph-box">
           <img src="./img/Assets/graph2.png"/>
-          <div class="box-text">
-          </div>
-        </div>
-        <div id="box">
-            <img src="./img/Assets/graph3.png"/>
-            <div class="box-text">
-            </div>
+        </div><!--
+        --><div class="graph-box">
+          <img src="./img/Assets/graph3.png"/>
         </div>
       </div>
-    </section>
-    <div class="executive-quotes">
-      <div class="quote-text">
-        <h2> Letter from the Executive Chairman </h2>
-        <img src="./img/Assets/quote.png">
-        <p> At this time last year, we told you what we planned to do in 2016. Then, we did it. We met our overarching objective: to grow free cash flow per share. </p>
-        <button class="button-open" style="vertical-align:middle">READ MORE</button>
-      </div>
-      <img class="executive-img" src="./img/Assets/Chairman.png"/>
+    </div>
 
-          <img src="./img/Assets/barrick-icon.png"/>
-          <img src="./img/Assets/director.png"/>
+    <div class="container">
+      <div class="executive-quotes-container">
+        <div class="executive-quotes">
           <div class="quote-text">
+            <h2> Letter from the <br> Executive Chairman </h2>
+            <br>
+            <img src="./img/Assets/quote.png">
+            <span> At this time last year, we told you what we planned to do in 2016. Then, we did it. We met our overarching objective: to grow free cash flow per share. </span>
+            <button class="button-open">READ MORE</button>
           </div>
-
-          <div class="quote-text">
+          <img class="barrick-icon" src="./img/Assets/barrick-con.png">
+          <img class="executive-img" src="./img/Assets/Chairman.png">
+          <img style="margin-left:8vw;"class="executive-img" src="./img/Assets/director.png"/>
+          <div style="float:right;margin:0;" class="quote-text">
+            <h2> Letter from the <br> Lead Director </h2>
+            <br>
+            <img src="./img/Assets/quote.png">
+            <span> At this time last year, we told you what we planned to do in 2016. Then, we did it. We met our overarching objective: to grow free cash flow per share. </span>
+            <button class="button-open">READ MORE</button>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="additional-information">
+
+      </div>
+    </div>
+
+    <div class="voting">
+      <div class="container">
+        <h3>2018 Meeting Voting Items</h3>
+        <div class="voting-text-box">
+          <h3> &#10003; </h3>
+          <h4>Electing Directors</h4>
+          <p>You will be electing a Board of Directors consisting of 15 members. Please refer to the section entitled “Directors” on page 22 of this Circular for biographies and more information on the nominees. Directors elected at the Meeting will serve until the end of our next annual shareholders’ meeting or until their resignation, if earlier. </p>
+          <button class="button-open-transparent">READ MORE</button>
+        </div>
+        <div class="voting-text-box">
+          <h3> &#10003; </h3>
+          <h4>Appointing the Auditor</h4>
+          <p> PricewaterhouseCoopers LLP (PwC) has been our external auditor since 1983. The Board, on the recommendation of the Audit Committee, recommends that PwC be reappointed as auditor and that the Board be authorized to set the auditor’s remuneration. The audit firm appointed at the Meeting will serve until the end of the Company’s next annual shareholders’ meeting.</p>
+          <button class="button-open-transparent">READ MORE</button>
+        </div>
+        <div class="voting-text-box">
+          <h3> &#10003; </h3>
+          <h4>Say on Pay Advisory Vote</h4>
+          <p>The Board has adopted a non-binding advisory vote relating to executive compensation to solicit feedback on our approach to executive compensation. The previous say on pay advisory vote held in 2016 was supported with the approval of 90.9% of those shareholders present at our 2016 annual meeting and voting in person or by proxy. </p>
+          <button style="margin-top:5vh;" class="button-open-transparent">READ MORE</button>
+        </div>
+      </div>
+
+      <div class="voting-cta">
+        <h2>Ready to cast your vote?</h2>
+        <button class="button-solid"><span>VOTE NOW</span></button>
+      </div>
+    </div>
+
+    <div class="annual-meeting-details">
+      <div class="container">
+        <h2 class="annual-meeting-title">Annual Meeting Details</h2>
+        <div class="meeting-text-box">
+          <p class="meeting-info-title">WHEN</p>
+          <div class="meeting-info-details"> Tuesday, April 13, 2018 </div>
+          <div class="meeting-info-details-2"> 9:30 AM PDT </div>
+        </div>
+        <div class="meeting-text-box">
+          <p class="meeting-info-title">WHERE</p>
+          <div class="meeting-info-details"> Hotel Location </div>
+          <div class="meeting-info-details-2"> 99 Union Street <br> Los Angeles, CA 98101</div>
+        </div>
+      </div>
+    </div>
+
+
 
     <footer>
       <div class="container">
-        <h3>Welcome</h3>
-        <hr>
-        <h2>Barrick: Delivering for <br>Shareholders</h2>
-      </div>
-      <p>Barrick, Copyright &copy; 2017</p>
     </footer>
   </body>
 </html>
