@@ -232,10 +232,18 @@ header select:hover{
   background-color: #003957;
 }
 
+#graph h2 {
+  font-size: 30px;
+  color: white;
+  padding-left: 5vw;
+  padding-top: 10vh;
+  opacity: 0.8
+}
+
 #graph img {
-    height: 400px;
+    height: 425px;
     width: auto;
-    padding: 0;
+    padding-bottom: 5vh;
     float: left;
     display:inline-block;
 }
